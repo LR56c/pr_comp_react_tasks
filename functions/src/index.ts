@@ -20,7 +20,8 @@ interface RemoveMessageData {
   name: string;
 }
 
-export const removeMessage = onCall<RemoveMessageData>(
+export const removeMessage
+               = onCall<RemoveMessageData>(
   async ( data, context ) => {
     try {
       const {id, name} = data.data;
